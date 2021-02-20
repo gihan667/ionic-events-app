@@ -6,4 +6,4 @@ We design main screen UI for Events App using Ionic 5.
 
 ### Preview
 
-![App UI](/preview.png)
+![App UI](/preview.jpg)
