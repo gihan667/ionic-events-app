@@ -1,0 +1,153 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary" no-border>
+    <ion-buttons slot="start">
+      <ion-button>
+        <img src="../../assets/menu.svg" />
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>
+      Event
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <img src="../../assets/notification.svg" />
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="banner">
+    <img src="../../assets/banner.svg" />
+
+    <div class="caption ion-padding">
+      Join with <br>
+      upcoming events
+    </div>
+
+    <div class="search">
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-icon slot="start" name="search-outline"></ion-icon>
+        <ion-input placeholder="Search events"></ion-input>
+        <ion-button slot='end'>
+          <img src="../../assets/filter.svg" />
+        </ion-button>
+      </ion-item>
+    </div>
+  </div>
+
+  <div class="title">
+    <h2>Popular Events</h2>
+
+    <p>See all</p>
+  </div>
+
+  <div class="event-slider">
+    <ion-slides [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }" class="default-left-padding">
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card>
+            <ion-card-header class="ion-no-padding">
+              <img src="../../assets/events/event1.svg" />
+            </ion-card-header>
+
+            <ion-card-content>
+              <p class="date">17th July, 2021</p>
+              <h2 class="eventname">International Jazz Festival</h2>
+              <p class="location"><ion-icon name="location"></ion-icon>Caracas, Venezuela</p>
+
+              <div class="additional-info">
+                <div class="attendees">
+                  <img src="../../assets/persons/person1.svg" />
+                  <img src="../../assets/persons/person2.svg" />
+                  <img src="../../assets/persons/person3.svg" />
+                  <img src="../../assets/persons/person4.svg" />
+                  <div class="count">
+                    <img src="../../assets/persons/person-placeholder.svg" />
+
+                    <p>+7</p>
+                  </div>
+                </div>
+
+                <p class="time">10:00pm</p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card>
+            <ion-card-header class="ion-no-padding">
+              <img src="../../assets/events/event2.svg" />
+            </ion-card-header>
+
+            <ion-card-content>
+              <p class="date">23th July, 2021</p>
+              <h2 class="eventname">Contemporary Dance</h2>
+              <p class="location"><ion-icon name="location"></ion-icon>Caracas, Venezuela</p>
+
+              <div class="additional-info">
+                <div class="attendees">
+                  <img src="../../assets/persons/person1.svg" />
+                  <img src="../../assets/persons/person2.svg" />
+                  <img src="../../assets/persons/person3.svg" />
+                  <img src="../../assets/persons/person4.svg" />
+                  <div class="count">
+                    <img src="../../assets/persons/person-placeholder.svg" />
+
+                    <p>+3</p>
+                  </div>
+                </div>
+
+                <p class="time">10:00pm</p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div class="default-top-padding title">
+    <h2>Live right now</h2>
+
+    <p>See all</p>
+  </div>
+
+  <div class="live-event">
+    <img src="../../assets/events/event3.svg" />
+
+    <div class="info">
+      <div class="content">
+        <h6>World Art Day</h6>
+
+        <p class="stats">
+          <span><ion-icon name="eye"></ion-icon>&nbsp;2.3K</span><span><ion-icon name="heart"></ion-icon>&nbsp;3758</span>
+        </p>
+
+        <p class="location"><ion-icon name='location'></ion-icon>Caracas, Venezuela</p>
+
+        <div class="additional-info">
+          <div class="attendees">
+            <img src="../../assets/persons/person1.svg" />
+            <img src="../../assets/persons/person2.svg" />
+            <img src="../../assets/persons/person3.svg" />
+            <img src="../../assets/persons/person4.svg" />
+            <div class="count">
+              <img src="../../assets/persons/person-placeholder.svg" />
+
+              <p>+3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="indicator">
+        <div>Live</div>
+      </div>
+    </div>
+  </div>
+</ion-content>
